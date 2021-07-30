@@ -1,5 +1,5 @@
 ---
-title: "goodenuff template"
+title: "goodenuffR template"
 author: "Your Name"
 date: "current version: `r Sys.Date()`"
 output: github_document
@@ -45,7 +45,7 @@ This `.Rmd` file is based on the **excellent** advice in the paper, ["Good Enoug
 - The `CITATION` and `LICENSE` files are created below. This function also creates a `requirements.txt` file that should list all dependencies for this project. 
 
 ```{r goodenuff_collab}
-gepisc4r::goodenuff_collab()
+goodenuffR::goodenuff_collab()
 ```
 
 See the Appendix below for the contents in these files. 
@@ -55,7 +55,7 @@ See the Appendix below for the contents in these files.
 This folder is titled `src` in the paper, but I opted for the more descriptive term `code`. 
 
 ```{r goodenuff_code}
-gepisc4r::goodenuff_code() 
+goodenuffR::goodenuff_code() 
 ```
 
 `code` can mean a lot of different things, so I will reprint the section of the paper here: 
@@ -125,7 +125,7 @@ Below is a header for the `runall.R` script.
 ## The data folder
 
 ```{r goodenuff_data}
-gepisc4r::goodenuff_data() 
+goodenuffR::goodenuff_data() 
 ```
 
 This folder will store your data. The data are arguably the most important part to an analysis, so I've included two articles that are absolute necessities to good data management. 
@@ -147,7 +147,7 @@ data/
 ## The doc folder
 
 ```{r goodenuff_doc}
-gepisc4r::goodenuff_doc() 
+goodenuffR::goodenuff_doc() 
 ```
 
 > The `doc` directory contains two text files written in Markdown, one containing a running lab notebook describing various ideas for the project and how these were implemented and the other containing a running draft of a manuscript describing the project findings.
@@ -198,7 +198,7 @@ For your brilliant ideas
 ## The results folder
 
 ```{r goodenuff_results}
-gepisc4r::goodenuff_results() 
+goodenuffR::goodenuff_results() 
 ```
 
 These are visualizations, model outputs, etc. It has three sub-folders:

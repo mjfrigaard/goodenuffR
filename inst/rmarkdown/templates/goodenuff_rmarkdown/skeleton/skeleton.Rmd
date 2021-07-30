@@ -1,0 +1,389 @@
+---
+title: "goodenuff template"
+author: "Your Name"
+date: "current version: `r Sys.Date()`"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+library(tidyverse)
+library(janitor)
+# base options ----
+base::options(
+  tibble.print_max = 25,
+  tibble.width = 78,
+  scipen = 100000000,
+  max.print = 999999
+)
+# knitr chunk options ----
+knitr::opts_chunk$set(
+  echo = TRUE, # show/hide all code
+  # results = "hide", # hide/show results
+  tidy = FALSE, # cleaner code printing
+  comment = "#> ", # better console printing
+  eval = TRUE, # turn this to FALSE stop code chunks from running
+  message = TRUE, # show messages
+  fig.width = 7, # figure width
+  fig.height = 5, # figure height
+  warning = FALSE, # show warnings
+  size = "small", # size of the text
+  fig.path = "img/" # location of figures
+) 
+# knitr knit settings ----
+knitr::opts_knit$set(
+  width = 78
+)
+```
+
+# Motivation
+
+This `.Rmd` file is based on the **excellent** advice in the paper, ["Good Enough Practices for Scientific Computing"](https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/) by Wilson et al. This file can be knitted to create a `README.md` file, too. 
+
+## The CITATION, requirements.txt, and LICENSE files
+
+- The `CITATION` and `LICENSE` files are created below. This function also creates a `requirements.txt` file that should list all dependencies for this project. 
+
+```{r goodenuff_collab}
+gepisc4r::goodenuff_collab()
+```
+
+See the Appendix below for the contents in these files. 
+
+## The code folder
+
+This folder is titled `src` in the paper, but I opted for the more descriptive term `code`. 
+
+```{r goodenuff_code}
+gepisc4r::goodenuff_code() 
+```
+
+`code` can mean a lot of different things, so I will reprint the section of the paper here: 
+
+> ***Put project source code in the src directory. (4d)** `src` contains all of the code written for the project. This includes programs written in interpreted languages such as R or Python; those written compiled languages like Fortran, C++, or Java; as well as shell scripts, snippets of SQL used to pull information from databases; and other code needed to regenerate the results.
+
+### The Scientific Guts
+
+The code below creates the following scripts based on the `tidyverse` workflow in the `code` folder. 
+
+These are the `import`, `wrangle`, `visualize`, `model`, and `communicate` scripts created below. 
+
+```
+code/
+    ├── 01-import.R
+    ├── 02-tidy.R
+    ├── 03-wrangle.R
+    ├── 04-visualize.R
+    ├── 05-model.R
+    ├── 06-communicate.R
+    └── runall.R
+```
+
+
+> This directory may contain two conceptually distinct types of files that should be distinguished either by clear file names or by additional sub-directories. The first type are files or groups of files that perform the core analysis of the research, such as data cleaning or statistical analyses. These files can be thought of as the "scientific guts" of the project.
+
+### Script headers
+
+```r
+#=====================================================================#
+# This is code to create:
+# Authored by and feedback to:
+# MIT License
+# Version:
+#=====================================================================#
+```
+
+> The second type of file in `src` is controller or driver scripts that that contains all the analysis steps for the entire project from start to finish, with particular parameters and data input/output commands. A controller script for a simple project, for example, may read a raw data table, import and apply several cleanup and analysis functions from the other files in this directory, and create and save a numeric result. For a small project with one main output, a single controller script should be placed in the main src directory and distinguished clearly by a name such as "`runall`". The short example in Figure [fig:script] is typical of scripts of this kind; note how it uses one variable, TEMP_DIR, to avoid repeating the name of a particular directory four times.
+
+The controller script is created in the code folder as, `runall.R`.
+
+Below is a header for the `runall.R` script.
+
+```r
+#=====================================================================#
+
+# The controller script: A controller script for a simple project, for example,
+# may read a raw data table, import and apply several cleanup and analysis
+# functions from the other files in this directory, and create and save a
+# numeric result.
+
+# TEMP_DIR = ./temp_zip_files/
+
+# echo 'Packaging zip files required by analysis tool...'
+# mkdir $(TEMP_DIR)
+# ./src/make-zip-files.py $(TEMP_DIR) *.dat
+
+# echo 'Analyzing...'
+# ./bin/sqr_mean_analyze -i $(TEMP_DIR) -b 'temp'
+
+# echo 'Cleaning up...'
+# rm -rf $(TEMP_DIR)
+
+#=====================================================================#
+```
+
+## The data folder
+
+```{r goodenuff_data}
+gepisc4r::goodenuff_data() 
+```
+
+This folder will store your data. The data are arguably the most important part to an analysis, so I've included two articles that are absolute necessities to good data management. 
+
+1. [How to Share Data for Collaboration](https://amstat.tandfonline.com/doi/abs/10.1080/00031305.2017.1375987) by Shannon E. Ellis & Jeffrey T. Leek
+
+2. [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989) by Karl W. Broman & Kara H. Woo
+
+These two are included in the `README.md` file in the data folder
+
+```
+data/
+    ├── README.md
+    └── raw
+```
+
+- The data folder also has a `raw` sub-folder.
+
+## The doc folder
+
+```{r goodenuff_doc}
+gepisc4r::goodenuff_doc() 
+```
+
+> The `doc` directory contains two text files written in Markdown, one containing a running lab notebook describing various ideas for the project and how these were implemented and the other containing a running draft of a manuscript describing the project findings.
+
+### The CHANGELOG.txt
+
+The `CHANGELOG.md` file is for documenting "*dated notes about changes to the project in this file in reverse chronological order (i.e., most recent first). This file is the equivalent of a lab notebook, and should contain entries like those shown below.* This can also referred to as the `NEWS.md` file. 
+
+```
+...make dated notes about changes to the project in this file in reverse chronological order (i.e., most recent first). This file is the equivalent of a lab notebook, and should contain entries like those shown below.
+
+## 2016-04-08
+
+* Switched to cubic interpolation as default.
+
+* Moved question about family's TB history to end of questionnaire.
+
+## 2016-04-06
+
+* Added option for cubic interpolation.
+
+* Removed question about staph exposure (can be inferred from blood test results).
+```
+
+### The manuscript.md
+
+Draft of your manuscript.
+
+```
+# Manuscript
+
+...a running draft of a manuscript describing the project findings
+```
+
+### The notebook.md
+
+For your brilliant ideas
+
+```
+# Notebook
+
+...a running lab notebook describing various ideas for the project and how these were implemented
+
+
+```
+
+
+## The results folder
+
+```{r goodenuff_results}
+gepisc4r::goodenuff_results() 
+```
+
+These are visualizations, model outputs, etc. It has three sub-folders:
+
+```
+results
+    ├── figures
+    ├── manuscript
+    └── tables
+```
+
+## Project folder structure
+
+Below is a nice overview of the accompanying files. 
+
+```r
+├── CITATION
+├── LICENSE
+├── code
+│   ├── 01-import.R
+│   ├── 02-tidy.R
+│   ├── 03-wrangle.R
+│   ├── 04-visualize.R
+│   ├── 05-model.R
+│   ├── 06-communicate.R
+│   └── runall.R
+├── data
+│   ├── README.md
+│   └── raw
+├── docs
+│   ├── changelog.txt
+│   ├── manuscript.md
+│   └── notebook.md
+├── my-new-project.Rproj
+├── requirements.txt
+└── results
+    ├── figures
+    ├── manuscript
+    └── tables
+```
+
+
+## Appendix
+
+### The LICENSE
+
+```
+Creative Commons Legal Code
+
+CC0 1.0 Universal
+
+    CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE
+    LEGAL SERVICES. DISTRIBUTION OF THIS DOCUMENT DOES NOT CREATE AN
+    ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS
+    INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS MAKES NO WARRANTIES
+    REGARDING THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS
+    PROVIDED HEREUNDER, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM
+    THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED
+    HEREUNDER.
+
+Statement of Purpose
+
+The laws of most jurisdictions throughout the world automatically confer
+exclusive Copyright and Related Rights (defined below) upon the creator
+and subsequent owner(s) (each and all, an "owner") of an original work of
+authorship and/or a database (each, a "Work").
+
+Certain owners wish to permanently relinquish those rights to a Work for
+the purpose of contributing to a commons of creative, cultural and
+scientific works ("Commons") that the public can reliably and without fear
+of later claims of infringement build upon, modify, incorporate in other
+works, reuse and redistribute as freely as possible in any form whatsoever
+and for any purposes, including without limitation commercial purposes.
+These owners may contribute to the Commons to promote the ideal of a free
+culture and the further production of creative, cultural and scientific
+works, or to gain reputation or greater distribution for their Work in
+part through the use and efforts of others.
+
+For these and/or other purposes and motivations, and without any
+expectation of additional consideration or compensation, the person
+associating CC0 with a Work (the "Affirmer"), to the extent that he or she
+is an owner of Copyright and Related Rights in the Work, voluntarily
+elects to apply CC0 to the Work and publicly distribute the Work under its
+terms, with knowledge of his or her Copyright and Related Rights in the
+Work and the meaning and intended legal effect of CC0 on those rights.
+
+1. Copyright and Related Rights. A Work made available under CC0 may be
+protected by copyright and related or neighboring rights ("Copyright and
+Related Rights"). Copyright and Related Rights include, but are not
+limited to, the following:
+
+  i. the right to reproduce, adapt, distribute, perform, display,
+     communicate, and translate a Work;
+ ii. moral rights retained by the original author(s) and/or performer(s);
+iii. publicity and privacy rights pertaining to a person's image or
+     likeness depicted in a Work;
+ iv. rights protecting against unfair competition in regards to a Work,
+     subject to the limitations in paragraph 4(a), below;
+  v. rights protecting the extraction, dissemination, use and reuse of data
+     in a Work;
+ vi. database rights (such as those arising under Directive 96/9/EC of the
+     European Parliament and of the Council of 11 March 1996 on the legal
+     protection of databases, and under any national implementation
+     thereof, including any amended or successor version of such
+     directive); and
+vii. other similar, equivalent or corresponding rights throughout the
+     world based on applicable law or treaty, and any national
+     implementations thereof.
+
+2. Waiver. To the greatest extent permitted by, but not in contravention
+of, applicable law, Affirmer hereby overtly, fully, permanently,
+irrevocably and unconditionally waives, abandons, and surrenders all of
+Affirmer's Copyright and Related Rights and associated claims and causes
+of action, whether now known or unknown (including existing as well as
+future claims and causes of action), in the Work (i) in all territories
+worldwide, (ii) for the maximum duration provided by applicable law or
+treaty (including future time extensions), (iii) in any current or future
+medium and for any number of copies, and (iv) for any purpose whatsoever,
+including without limitation commercial, advertising or promotional
+purposes (the "Waiver"). Affirmer makes the Waiver for the benefit of each
+member of the public at large and to the detriment of Affirmer's heirs and
+successors, fully intending that such Waiver shall not be subject to
+revocation, rescission, cancellation, termination, or any other legal or
+equitable action to disrupt the quiet enjoyment of the Work by the public
+as contemplated by Affirmer's express Statement of Purpose.
+
+3. Public License Fallback. Should any part of the Waiver for any reason
+be judged legally invalid or ineffective under applicable law, then the
+Waiver shall be preserved to the maximum extent permitted taking into
+account Affirmer's express Statement of Purpose. In addition, to the
+extent the Waiver is so judged Affirmer hereby grants to each affected
+person a royalty-free, non transferable, non sublicensable, non exclusive,
+irrevocable and unconditional license to exercise Affirmer's Copyright and
+Related Rights in the Work (i) in all territories worldwide, (ii) for the
+maximum duration provided by applicable law or treaty (including future
+time extensions), (iii) in any current or future medium and for any number
+of copies, and (iv) for any purpose whatsoever, including without
+limitation commercial, advertising or promotional purposes (the
+"License"). The License shall be deemed effective as of the date CC0 was
+applied by Affirmer to the Work. Should any part of the License for any
+reason be judged legally invalid or ineffective under applicable law, such
+partial invalidity or ineffectiveness shall not invalidate the remainder
+of the License, and in such case Affirmer hereby affirms that he or she
+will not (i) exercise any of his or her remaining Copyright and Related
+Rights in the Work or (ii) assert any associated claims and causes of
+action with respect to the Work, in either case contrary to Affirmer's
+express Statement of Purpose.
+
+4. Limitations and Disclaimers.
+
+ a. No trademark or patent rights held by Affirmer are waived, abandoned,
+    surrendered, licensed or otherwise affected by this document.
+ b. Affirmer offers the Work as-is and makes no representations or
+    warranties of any kind concerning the Work, express, implied,
+    statutory or otherwise, including without limitation warranties of
+    title, merchantability, fitness for a particular purpose, non
+    infringement, or the absence of latent or other defects, accuracy, or
+    the present or absence of errors, whether or not discoverable, all to
+    the greatest extent permissible under applicable law.
+ c. Affirmer disclaims responsibility for clearing rights of other persons
+    that may apply to the Work or any use thereof, including without
+    limitation any person's Copyright and Related Rights in the Work.
+    Further, Affirmer disclaims responsibility for obtaining any necessary
+    consents, permissions or other rights required for any use of the
+    Work.
+ d. Affirmer understands and acknowledges that Creative Commons is not a
+    party to this document and has no duty or obligation with respect to
+    this CC0 or use of the Work.
+```
+
+### The requirements.txt
+
+```
+# Requirements 
+
+
+'Make dependencies and requirements explicit. This is usually done on a per-project rather than per-program basis, i.e., by adding a file called something like requirements.txt to the root directory of the project' 
+
+
+
+
+source: https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/
+```
+
+
+
+
+

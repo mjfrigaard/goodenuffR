@@ -1,0 +1,15 @@
+Package: goodenuffR
+Type: Package
+Title: Create a project folder 
+Version: 0.1.0
+Authors@R: 
+    person(given = "Martin",
+           family = "Frigaard",
+           role = c("aut", "cre"),
+           email = "mjfrigaard@pm.me")
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: This package creates folders and files following the advice in the excellent paper, https: //swcarpentry.github.io/good-enough-practices-in-scientific-computing/.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1

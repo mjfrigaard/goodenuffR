@@ -102,7 +102,7 @@ How your project will look:
 The `goodenuffR` package also comes with an R markdown template: 
 
 ```{r new-rmd.png, echo=FALSE}
-# knitr::include_graphics("img/new-rmd.png")
+knitr::include_graphics("img/new-rmd.png")
 ```
 
 

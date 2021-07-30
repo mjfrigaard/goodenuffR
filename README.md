@@ -92,3 +92,5 @@ How your project will look:
 ## Markdown Template
 
 The `goodenuffR` package also comes with an R markdown template:
+
+<img src="img/new-rmd.png" width="100%" />

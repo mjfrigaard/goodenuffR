@@ -64,6 +64,7 @@ goodenuffR::goodenuff_project(project_name = "my project", folder_path = "~/proj
 Then run this:
 
 ```{r goodenuff_files, eval=FALSE}
+library(goodenuffR)
 goodenuff_files()
 ```
 

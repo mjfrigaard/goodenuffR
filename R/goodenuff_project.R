@@ -11,8 +11,6 @@
 #' @param project_name name of your project
 #' @param parent_folder the parent folder of your project
 goodenuff_project <- function(project_name, parent_folder) {
-  project_name <- as.character(project_name)
-  parent_folder <- as.character(parent_folder)
   # check for parent folder
   fs::dir_create(path = parent_folder)
   # clean string for project name

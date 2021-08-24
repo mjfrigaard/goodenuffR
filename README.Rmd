@@ -58,6 +58,11 @@ library(goodenuffR)
 goodenuffR::goodenuff_project(project_name = "my project", parent_folder = "projects")
 ```
 
+```{r goodenuff_files, eval=FALSE}
+goodenuff_files()
+```
+
+
 
 ## Example
 

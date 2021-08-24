@@ -49,6 +49,10 @@ library(goodenuffR)
 goodenuffR::goodenuff_project(project_name = "my project", parent_folder = "projects")
 ```
 
+``` r
+goodenuff_files()
+```
+
 ## Example
 
 Create the `code/`, `data/`, `doc/`, and `results/` folders using the

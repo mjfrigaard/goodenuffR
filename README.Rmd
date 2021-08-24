@@ -53,38 +53,23 @@ devtools::install_github("mjfrigaard/goodenuffR")
 
 ## Quick Start 
 
+Run this:
+
 ```{r , eval=FALSE}
 library(goodenuffR)
 goodenuffR::goodenuff_project(project_name = "my project", folder_path = "~/projects")
 ```
+
+Then run this:
 
 ```{r goodenuff_files, eval=FALSE}
 goodenuff_files()
 ```
 
 
+And you'll see this: 
 
-## Example
-
-Create the `code/`, `data/`, `doc/`, and `results/` folders using the functions below: 
-
-```{r example, eval=FALSE}
-library(goodenuffR)
-goodenuffR::goodenuff_code()   
-goodenuffR::goodenuff_data()   
-goodenuffR::goodenuff_doc()   
-goodenuffR::goodenuff_results()
-```
-
-Create the necessary files for collaboration:
-
-```{r goodenuff_collab, eval=FALSE}
-goodenuffR::goodenuff_collab()
-```
-
-How your project will look: 
-
-```r
+```{r, eval=FALSE}
 ├── CITATION
 ├── LICENSE
 ├── code
@@ -102,12 +87,32 @@ How your project will look:
 │   ├── changelog.txt
 │   ├── manuscript.md
 │   └── notebook.md
-├── my-new-project.Rproj
+├── my_project.Rproj
 ├── requirements.txt
 └── results
     ├── figures
     ├── manuscript
     └── tables
+```
+
+
+
+## Example
+
+Or create the `code/`, `data/`, `doc/`, and `results/` folders and files using the functions below: 
+
+```{r example, eval=FALSE}
+library(goodenuffR)
+goodenuffR::goodenuff_code()   
+goodenuffR::goodenuff_data()   
+goodenuffR::goodenuff_doc()   
+goodenuffR::goodenuff_results()
+```
+
+Also create the necessary files for collaboration:
+
+```{r goodenuff_collab, eval=FALSE}
+goodenuffR::goodenuff_collab()
 ```
 
 ## Markdown Template

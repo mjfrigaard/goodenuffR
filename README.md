@@ -46,7 +46,7 @@ devtools::install_github("mjfrigaard/goodenuffR")
 
 ``` r
 library(goodenuffR)
-goodenuffR::goodenuff_project(project_name = "my project", parent_folder = "projects")
+goodenuffR::goodenuff_project(project_name = "my project", folder_path = "projects")
 ```
 
 ``` r

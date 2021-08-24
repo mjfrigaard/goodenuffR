@@ -4,7 +4,7 @@
 \alias{goodenuff_project}
 \title{goodenuff_project}
 \usage{
-goodenuff_project(project_name, parent_folder)
+goodenuff_project(project_name, folder_path)
 }
 \arguments{
 \item{project_name}{name of your project}

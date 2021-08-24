@@ -12,8 +12,8 @@
 #' @param parent_folder the parent folder of your project
 goodenuff_project <- function(project_name, folder_path) {
   # check for folder_path
-  folder_path <- base::normalizePath(folder_path)
   fs::dir_create(path = folder_path)
+  folder_path <- base::normalizePath(folder_path)
   # clean string for project name
   clean_project_name <- janitor::make_clean_names(project_name, parsing_option = 1, numerals = "right")
   # create path to project

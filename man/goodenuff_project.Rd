@@ -6,6 +6,11 @@
 \usage{
 goodenuff_project(project_name, parent_folder)
 }
+\arguments{
+\item{project_name}{name of your project}
+
+\item{parent_folder}{the parent folder of your project}
+}
 \description{
-Create a new 'good enough' project.
+Create and open a new 'good enough' project.
 }

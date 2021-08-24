@@ -42,6 +42,13 @@ install.packages("devtools")
 devtools::install_github("mjfrigaard/goodenuffR")
 ```
 
+## Quick Start
+
+``` r
+library(goodenuffR)
+goodenuffR::goodenuff_project(project_name = "my project", parent_folder = "projects")
+```
+
 ## Example
 
 Create the `code/`, `data/`, `doc/`, and `results/` folders using the

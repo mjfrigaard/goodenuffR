@@ -7,5 +7,5 @@
 goodenuff_data()
 }
 \description{
-Create data folder, README.md file, and raw subfolder.
+Create data folder, README.md file, and raw sub-folder.
 }

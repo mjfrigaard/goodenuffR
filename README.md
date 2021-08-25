@@ -76,8 +76,8 @@ And you’ll see this:
 │   └── raw
 ├── docs
 │   ├── changelog.txt
-│   ├── manuscript.md
-│   └── notebook.md
+│   ├── manuscript.Rmd
+│   └── notebook.Rmd
 ├── my_project.Rproj
 ├── requirements.txt
 └── results

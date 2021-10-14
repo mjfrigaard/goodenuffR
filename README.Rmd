@@ -17,7 +17,7 @@ library(tidyverse)
 
 # goodenuffR
 
-```{r goodenuffR.png, echo=FALSE, fig.align='right', out.width = "50%", out.height='50%'}
+```{r goodenuffR.png, echo=FALSE, fig.align='left', out.width = "50%", out.height='50%'}
 knitr::include_graphics("img/goodenuffR.png")
 ```
 
@@ -163,8 +163,7 @@ This comes from https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt
 
 ### README.Rmd
 
-
-
+The README.Rmd comes from the excellent example provided by  [`usethis::use_readme_rmd()`](https://usethis.r-lib.org/reference/use_readme_rmd.html). Read more [here](https://r-pkgs.org/whole-game.html#use_readme_rmd)
 
 
 ### `requirements.txt` 

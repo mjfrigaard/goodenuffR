@@ -3,7 +3,7 @@
 
 # goodenuffR
 
-<img src="img/goodenuffR.png" width="50%" height="50%" style="display: block; margin: auto 0 auto auto;" />
+<img src="img/goodenuffR.png" width="50%" height="50%" style="display: block; margin: auto auto auto 0;" />
 
 This `goodenuffR` package is based on the **excellent** advice in the
 paper, [“Good Enough Practices for Scientific
@@ -144,6 +144,10 @@ This comes from
 <https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt>
 
 ### README.Rmd
+
+The README.Rmd comes from the excellent example provided by
+[`usethis::use_readme_rmd()`](https://usethis.r-lib.org/reference/use_readme_rmd.html).
+Read more [here](https://r-pkgs.org/whole-game.html#use_readme_rmd)
 
 ### `requirements.txt`
 

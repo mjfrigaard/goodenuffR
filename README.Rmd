@@ -17,7 +17,7 @@ library(tidyverse)
 
 # goodenuffR
 
-```{r goodenuffR.png, echo=FALSE, fig.align='right'}
+```{r goodenuffR.png, echo=FALSE, fig.align='right', out.width = "50%", out.height='50%'}
 knitr::include_graphics("img/goodenuffR.png")
 ```
 

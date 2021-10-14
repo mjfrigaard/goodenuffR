@@ -3,7 +3,7 @@
 
 # goodenuffR
 
-<img src="img/goodenuffR.png" width="100%" style="display: block; margin: auto 0 auto auto;" />
+<img src="img/goodenuffR.png" width="50%" height="50%" style="display: block; margin: auto 0 auto auto;" />
 
 This `goodenuffR` package is based on the **excellent** advice in the
 paper, [“Good Enough Practices for Scientific

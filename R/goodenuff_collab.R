@@ -17,4 +17,7 @@ goodenuff_collab <- function() {
   readr::write_lines(x = requirements_content, file = "requirements.txt")
 
   utils::download.file(url = "https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt", destfile = "LICENSE")
+
+  download.file(url = "https://raw.githubusercontent.com/rstudio/rmarkdown/main/inst/rmarkdown/templates/github_document/skeleton/skeleton.Rmd", destfile = "README.Rmd")
+
 }

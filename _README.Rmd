@@ -282,4 +282,3 @@ The `goodenuffR` package also comes with a `rmarkdown` template:
 knitr::include_graphics("img/new-rmd.png")
 ```
 
-

@@ -17,6 +17,10 @@ library(tidyverse)
 
 # goodenuffR
 
+```{r goodenuffR.png, echo=FALSE, fig.align='right'}
+knitr::include_graphics("img/goodenuffR.png")
+```
+
 This `goodenuffR` package is based on the **excellent** advice in the paper, ["Good Enough Practices for Scientific Computing"](https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/) by Wilson et al. 
 
 <!-- badges: start -->
@@ -74,6 +78,7 @@ And you'll see this:
 ```{r tree, eval=FALSE}
 ├── CITATION
 ├── LICENSE
+├── README.Rmd
 ├── code
 │   ├── 01-import.R
 │   ├── 02-tidy.R
@@ -130,6 +135,10 @@ Each `code` file has a header:
 
 ```{r goodenuff_collab, eval=FALSE}
 goodenuffR::goodenuff_collab()
+# └── CITATION
+# └── LICENSE
+# └── README.Rmd
+# └── requirements.txt
 ```
 
 This creates `CITATION`, `requirements.txt`, and `LICENSE` files. 
@@ -148,6 +157,16 @@ improving access to existing ecological data.'PLOS ONE 8:e65848.
 http://doi.org/doi:10.1371/journal.pone.0065848
 ```
 
+### `LICENSE` 
+
+This comes from https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt
+
+### README.Rmd
+
+
+
+
+
 ### `requirements.txt` 
 
 ```
@@ -162,9 +181,7 @@ something like requirements.txt to the root directory of the project'
 source: https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/
 ```
 
-### `LICENSE` 
 
-This comes from https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt
 
 
 ## Good Enough Data Storage and Use
@@ -198,6 +215,8 @@ https://r-pkgs.org/data.html
 
 source: https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/
 ```
+
+
 ## Good Enough Documentation 
 
 The `goodenuffR::goodenuff_doc()` function creates three files to document your project.
@@ -257,9 +276,6 @@ a lab notebook, and should contain entries like those shown below.
 
 source: https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/
 ```
-
-
-
 
 
 ## Good Enough Results 

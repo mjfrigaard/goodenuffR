@@ -15,6 +15,7 @@ header. The header includes sections for:
 - Version
 }
 \examples{
-# use this to create a script header
+# use this to create a script header (with RStudio open)
+# topr()
 
 }

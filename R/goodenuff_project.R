@@ -10,6 +10,7 @@
 #' @description Create and open a new 'good enough' project.
 #' @param project_name name of your project
 #' @param parent_folder the parent folder of your project
+#'
 goodenuff_project <- function(project_name, folder_path) {
   # check for folder_path
   fs::dir_create(path = folder_path)

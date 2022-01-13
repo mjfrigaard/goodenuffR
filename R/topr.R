@@ -5,7 +5,8 @@
 #' @import stringr
 #' @export topr
 #'
-#' @examples # use this to create a script header
+#' @examples # use this to create a script header (with RStudio open)
+#' # topr()
 #'
 #' @description The topr function can be used in a new R script to create a
 #' header. The header includes sections for:

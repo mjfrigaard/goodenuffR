@@ -7,5 +7,5 @@
 goodenuff_doc()
 }
 \description{
-Create doc folder with notebook.md, manuscript.md, and changelog.txt files.
+Create doc folder with notebook.Rmd, manuscript.Rmd, and changelog.txt files.
 }

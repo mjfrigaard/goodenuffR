@@ -7,10 +7,19 @@
     <loc>https://mjfrigaard.github.io/goodenuffR/LICENSE-text.html</loc>
   </url>
   <url>
+    <loc>https://mjfrigaard.github.io/goodenuffR/articles/getting-started.html</loc>
+  </url>
+  <url>
+    <loc>https://mjfrigaard.github.io/goodenuffR/articles/index.html</loc>
+  </url>
+  <url>
     <loc>https://mjfrigaard.github.io/goodenuffR/authors.html</loc>
   </url>
   <url>
     <loc>https://mjfrigaard.github.io/goodenuffR/index.html</loc>
+  </url>
+  <url>
+    <loc>https://mjfrigaard.github.io/goodenuffR/reference/fun_headr.html</loc>
   </url>
   <url>
     <loc>https://mjfrigaard.github.io/goodenuffR/reference/goodenuff_code.html</loc>
@@ -35,9 +44,6 @@
   </url>
   <url>
     <loc>https://mjfrigaard.github.io/goodenuffR/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://mjfrigaard.github.io/goodenuffR/reference/rheadr.html</loc>
   </url>
   <url>
     <loc>https://mjfrigaard.github.io/goodenuffR/reference/topr.html</loc>

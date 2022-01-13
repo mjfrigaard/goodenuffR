@@ -18,7 +18,7 @@ library(tidyverse)
 # goodenuffR
 
 ```{r goodenuffR.png, echo=FALSE, fig.align='left', out.width = "50%", out.height='50%'}
-knitr::include_graphics("img/goodenuffR.png")
+knitr::include_graphics("man/figures/goodenuffR.png")
 ```
 
 This `goodenuffR` package is based on the **excellent** advice in the paper, ["Good Enough Practices for Scientific Computing"](https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/) by Wilson et al. 
@@ -294,6 +294,6 @@ goodenuffR::goodenuff_results()
 The `goodenuffR` package also comes with a `rmarkdown` template: 
 
 ```{r new-rmd.png, echo=FALSE}
-knitr::include_graphics("img/new-rmd.png")
+knitr::include_graphics("man/figures/new-rmd.png")
 ```
 

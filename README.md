@@ -3,7 +3,7 @@
 
 # goodenuffR
 
-<img src="img/goodenuffR.png" width="50%" height="50%" style="display: block; margin: auto auto auto 0;" />
+<img src="man/figures/goodenuffR.png" width="50%" height="50%" style="display: block; margin: auto auto auto 0;" />
 
 This `goodenuffR` package is based on the **excellent** advice in the
 paper, [“Good Enough Practices for Scientific
@@ -265,4 +265,4 @@ goodenuffR::goodenuff_results()
 
 The `goodenuffR` package also comes with a `rmarkdown` template:
 
-<img src="img/new-rmd.png" width="100%" />
+<img src="man/figures/new-rmd.png" width="100%" />

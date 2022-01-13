@@ -19,21 +19,23 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 The goal of `goodenuffR` is to create the files and folders outlined in
 the paper above (and like the folder tree below)
 
-    |-- CITATION
-    |-- README
-    |-- LICENSE
-    |-- requirements.txt
-    |-- data
-    |   -- birds_count_table.csv
-    |-- doc
-    |   -- notebook.md
-    |   -- manuscript.md
-    |   -- changelog.txt
-    |-- results
-    |   -- summarized_results.csv
-    |-- src
-    |   -- sightings_analysis.py
-    |   -- runall.py
+``` markdown
+|-- CITATION
+|-- README
+|-- LICENSE
+|-- requirements.txt
+|-- data
+|   -- birds_count_table.csv
+|-- doc
+|   -- notebook.md
+|   -- manuscript.md
+|   -- changelog.txt
+|-- results
+|   -- summarized_results.csv
+|-- src
+|   -- sightings_analysis.py
+|   -- runall.py
+```
 
 ## Installation
 
@@ -62,32 +64,30 @@ goodenuff_files()
 
 And you’ll see this:
 
-``` r
-├── CITATION
-├── LICENSE
-├── README.Rmd
-├── code
-│   ├── 01-import.R
-│   ├── 02-tidy.R
-│   ├── 03-wrangle.R
-│   ├── 04-visualize.R
-│   ├── 05-model.R
-│   ├── 06-communicate.R
-│   └── runall.R
-├── data
-│   ├── README.md
-│   └── raw
-├── docs
-│   ├── changelog.txt
-│   ├── manuscript.Rmd
-│   └── notebook.Rmd
-├── my_project.Rproj
-├── requirements.txt
-└── results
-    ├── figures
-    ├── manuscript
-    └── tables
-```
+    ├── CITATION
+    ├── LICENSE
+    ├── README.Rmd
+    ├── code
+    │   ├── 01-import.R
+    │   ├── 02-tidy.R
+    │   ├── 03-wrangle.R
+    │   ├── 04-visualize.R
+    │   ├── 05-model.R
+    │   ├── 06-communicate.R
+    │   └── runall.R
+    ├── data
+    │   ├── README.md
+    │   └── raw
+    ├── docs
+    │   ├── changelog.txt
+    │   ├── manuscript.Rmd
+    │   └── notebook.Rmd
+    ├── my_project.Rproj
+    ├── requirements.txt
+    └── results
+        ├── figures
+        ├── manuscript
+        └── tables
 
 ## Good Enough Code documentation
 
@@ -95,48 +95,54 @@ And you’ll see this:
 
 ``` r
 goodenuffR::goodenuff_code()
-# └── code
-#    ├── 01-import.R
-#    ├── 02-tidy.R
-#    ├── 03-wrangle.R
-#    ├── 04-visualize.R
-#    ├── 05-model.R
-#    ├── 06-communicate.R
-#    └── runall.R
 ```
+
+    # └── code
+    #    ├── 01-import.R
+    #    ├── 02-tidy.R
+    #    ├── 03-wrangle.R
+    #    ├── 04-visualize.R
+    #    ├── 05-model.R
+    #    ├── 06-communicate.R
+    #    └── runall.R
 
 Each `code` file has a header:
 
-    #=====================================================================#
-    # This is code to create:
-    # Authored by and feedback to:
-    # MIT License
-    # Version:
-    #=====================================================================#
+``` r
+#=====================================================================#
+# This is code to create:
+# Authored by and feedback to:
+# MIT License
+# Version:
+#=====================================================================#
+```
 
 ## Good Enough Collaboration
 
 ``` r
 goodenuffR::goodenuff_collab()
-# └── CITATION
-# └── LICENSE
-# └── README.Rmd
-# └── requirements.txt
 ```
+
+    # └── CITATION
+    # └── LICENSE
+    # └── README.Rmd
+    # └── requirements.txt
 
 This creates `CITATION`, `requirements.txt`, and `LICENSE` files.
 
 ### `CITATION`
 
-    Make the project citable (3e) by including a CITATION file in the project's 
-    home directory that describes how to cite this project as a whole, and where 
-    to find (and how to cite) any data sets, code, figures, and other artifacts 
-    that have their own DOIs.
+``` markdown
+Make the project citable (3e) by including a CITATION file in the project's 
+home directory that describes how to cite this project as a whole, and where 
+to find (and how to cite) any data sets, code, figures, and other artifacts 
+that have their own DOIs.
 
-    Please cite this work as:
-    Morris, B.D. and E.P. White. 2013. 'The EcoData Retriever:
-    improving access to existing ecological data.'PLOS ONE 8:e65848.
-    http://doi.org/doi:10.1371/journal.pone.0065848
+Please cite this work as:
+Morris, B.D. and E.P. White. 2013. 'The EcoData Retriever:
+improving access to existing ecological data.'PLOS ONE 8:e65848.
+http://doi.org/doi:10.1371/journal.pone.0065848
+```
 
 ### `LICENSE`
 
@@ -151,15 +157,17 @@ Read more [here](https://r-pkgs.org/whole-game.html#use_readme_rmd)
 
 ### `requirements.txt`
 
-    # Requirements 
+``` markdown
+# Requirements 
 
 
-    'Make dependencies and requirements explicit. This is usually done on a 
-    per-project rather than per-program basis, i.e., by adding a file called 
-    something like requirements.txt to the root directory of the project'
+'Make dependencies and requirements explicit. This is usually done on a 
+per-project rather than per-program basis, i.e., by adding a file called 
+something like requirements.txt to the root directory of the project'
 
 
-    source: https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/
+source: https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/
+```
 
 ## Good Enough Data Storage and Use
 
@@ -167,30 +175,33 @@ Create folder for keeping raw data separate from other data files.
 
 ``` r
 goodenuffR::goodenuff_data()
-# data
-# ├── README.md
-# └── raw
 ```
+
+    # data
+    # ├── README.md
+    # └── raw
 
 The contents of the `data/README.md` file also provide some guidance on
 storing and documenting data.
 
-    # Project Data  
+``` markdown
+# Project Data  
 
-    For guidance please see: https://help.osf.io/hc/en-us/articles/360019739054-How-to-Make-a-Data-Dictionary
+For guidance please see: https://help.osf.io/hc/en-us/articles/360019739054-How-to-Make-a-Data-Dictionary
 
-    ## Additional Resources
+## Additional Resources
 
-    1. Sharing data
-    http://bit.ly/data-4-sharing
+1. Sharing data
+http://bit.ly/data-4-sharing
 
-    2. Data in spreadsheets
-    http://bit.ly/data-in-sheets
+2. Data in spreadsheets
+http://bit.ly/data-in-sheets
 
-    3. External data (https://r-pkgs.org/)
-    https://r-pkgs.org/data.html
+3. External data (https://r-pkgs.org/)
+https://r-pkgs.org/data.html
 
-    source: https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/
+source: https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/
+```
 
 ## Good Enough Documentation
 
@@ -199,29 +210,34 @@ document your project.
 
 ``` r
 goodenuffR::goodenuff_doc() 
-# docs
-# ├── changelog.txt
-# ├── manuscript.Rmd
-# └── notebook.Rmd
 ```
+
+    # docs
+    # ├── changelog.txt
+    # ├── manuscript.Rmd
+    # └── notebook.Rmd
 
 `notebook.Rmd` is an `html_notebook`, while `manuscript.Rmd` is a
 `pdf_document` (both written in `rmarkdown`).
 
 ### `notebook.Rmd`
 
-    ...a running lab notebook describing various ideas for the project and how 
-    these were implemented
+``` markdown
+...a running lab notebook describing various ideas for the project and how 
+these were implemented
 
 
-    source: https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/
+source: https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/
+```
 
 ### `manuscript.Rmd`
 
-    ....a running draft of a manuscript describing the project findings
+``` markdown
+....a running draft of a manuscript describing the project findings
 
 
-    source: https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/
+source: https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/
+```
 
 Read more about rmarkdown [here](https://rmarkdown.rstudio.com/) and
 [here](https://bookdown.org/yihui/rmarkdown/).
@@ -230,24 +246,26 @@ The `changelog.txt` is a plain text file (for ‘manual version control’).
 
 ### `changelog.txt`
 
-    ..make dated notes about changes to the project in this file in reverse 
-    chronological order (i.e., most recent first). This file is the equivalent of 
-    a lab notebook, and should contain entries like those shown below.
+``` markdown
+..make dated notes about changes to the project in this file in reverse 
+chronological order (i.e., most recent first). This file is the equivalent of 
+a lab notebook, and should contain entries like those shown below.
 
-    ## 2016-04-08
+## 2016-04-08
 
-    * Switched to cubic interpolation as default.
+* Switched to cubic interpolation as default.
 
-    * Moved question about family's TB history to end of questionnaire.
+* Moved question about family's TB history to end of questionnaire.
 
-    ## 2016-04-06
+## 2016-04-06
 
-    * Added option for cubic interpolation.
+* Added option for cubic interpolation.
 
-    * Removed question about staph exposure (can be inferred from blood test results).
+* Removed question about staph exposure (can be inferred from blood test results).
 
 
-    source: https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/
+source: https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/
+```
 
 ## Good Enough Results
 
@@ -255,11 +273,12 @@ The following folders are created for your project results:
 
 ``` r
 goodenuffR::goodenuff_results()
-# results
-# ├── figures
-# ├── manuscript
-# └── tables
 ```
+
+    # results
+    # ├── figures
+    # ├── manuscript
+    # └── tables
 
 ## BONUS: RMarkdown Template
 

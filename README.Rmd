@@ -29,7 +29,7 @@ This `goodenuffR` package is based on the **excellent** advice in the paper, ["G
 
 The goal of `goodenuffR` is to create the files and folders outlined in the paper above (and like the folder tree below)
 
-```
+```markdown
 |-- CITATION
 |-- README
 |-- LICENSE
@@ -75,7 +75,7 @@ goodenuff_files()
 
 And you'll see this: 
 
-```{r tree, eval=FALSE}
+```
 ├── CITATION
 ├── LICENSE
 ├── README.Rmd
@@ -110,6 +110,9 @@ And you'll see this:
 
 ```{r goodenuff_code, eval=FALSE}
 goodenuffR::goodenuff_code()
+```
+
+```
 # └── code
 #    ├── 01-import.R
 #    ├── 02-tidy.R
@@ -122,7 +125,7 @@ goodenuffR::goodenuff_code()
 
 Each `code` file has a header: 
 
-```
+```r
 #=====================================================================#
 # This is code to create:
 # Authored by and feedback to:
@@ -135,6 +138,9 @@ Each `code` file has a header:
 
 ```{r goodenuff_collab, eval=FALSE}
 goodenuffR::goodenuff_collab()
+```
+
+```
 # └── CITATION
 # └── LICENSE
 # └── README.Rmd
@@ -145,7 +151,7 @@ This creates `CITATION`, `requirements.txt`, and `LICENSE` files.
 
 ### `CITATION`
 
-```
+```markdown
 Make the project citable (3e) by including a CITATION file in the project's 
 home directory that describes how to cite this project as a whole, and where 
 to find (and how to cite) any data sets, code, figures, and other artifacts 
@@ -168,7 +174,7 @@ The README.Rmd comes from the excellent example provided by  [`usethis::use_read
 
 ### `requirements.txt` 
 
-```
+```markdown
 # Requirements 
 
 
@@ -189,6 +195,9 @@ Create folder for keeping raw data separate from other data files.
 
 ```{r data-tree, eval=FALSE}
 goodenuffR::goodenuff_data()
+```
+
+```
 # data
 # ├── README.md
 # └── raw
@@ -196,7 +205,7 @@ goodenuffR::goodenuff_data()
 
 The contents of the `data/README.md` file also provide some guidance on storing and documenting data. 
 
-```
+```markdown
 # Project Data  
 
 For guidance please see: https://help.osf.io/hc/en-us/articles/360019739054-How-to-Make-a-Data-Dictionary
@@ -222,6 +231,9 @@ The `goodenuffR::goodenuff_doc()` function creates three files to document your 
 
 ```{r docs-tree, eval=FALSE}
 goodenuffR::goodenuff_doc() 
+```
+
+```
 # docs
 # ├── changelog.txt
 # ├── manuscript.Rmd
@@ -232,7 +244,7 @@ goodenuffR::goodenuff_doc()
 
 ### `notebook.Rmd` 
 
-```
+```markdown
 ...a running lab notebook describing various ideas for the project and how 
 these were implemented
 
@@ -242,7 +254,7 @@ source: https://swcarpentry.github.io/good-enough-practices-in-scientific-comput
 
 ### `manuscript.Rmd`
 
-```
+```markdown
 ....a running draft of a manuscript describing the project findings
 
 
@@ -255,7 +267,7 @@ The `changelog.txt` is a plain text file (for 'manual version control').
 
 ### `changelog.txt`
 
-```
+```markdown
 ..make dated notes about changes to the project in this file in reverse 
 chronological order (i.e., most recent first). This file is the equivalent of 
 a lab notebook, and should contain entries like those shown below.
@@ -283,6 +295,9 @@ The following folders are created for your project results:
 
 ```{r results-tree, eval=FALSE}
 goodenuffR::goodenuff_results()
+```
+
+```
 # results
 # ├── figures
 # ├── manuscript

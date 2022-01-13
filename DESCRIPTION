@@ -25,3 +25,4 @@ Imports:
     vroom
 Depends: 
     R (>= 2.10)
+URL: https://mjfrigaard.github.io/goodenuffR/

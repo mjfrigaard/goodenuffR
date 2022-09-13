@@ -3,7 +3,7 @@ pkgdown: 2.0.6
 pkgdown_sha: ~
 articles:
   getting-started: getting-started.html
-last_built: 2022-09-13T04:48Z
+last_built: 2022-09-13T05:21Z
 urls:
   reference: https://mjfrigaard.github.io/goodenuffR/reference
   article: https://mjfrigaard.github.io/goodenuffR/articles

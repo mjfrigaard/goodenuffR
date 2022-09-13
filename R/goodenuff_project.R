@@ -1,10 +1,9 @@
-#' goodenuff_project
+#' Create a new goodenuffR project
 #'
 #' @import rstudioapi
-#' @import dplyr
-#' @import tidyr
 #' @import fs
 #' @import stringr
+#' @importFrom stringr str_replace_all
 #' @export goodenuff_project
 #'
 #' @description Create and open a new 'good enough' project.
@@ -16,7 +15,7 @@ goodenuff_project <- function(project_name, folder_path) {
   fs::dir_create(path = folder_path)
   folder_path <- base::suppressWarnings(base::normalizePath(folder_path))
   # clean string for project name
-  clean_project_name <- janitor::make_clean_names(project_name, parsing_option = 1, numerals = "right")
+  clean_project_name <- stringr::str_replace_all(project_name, "\\s+", "-")
   # create path to project
   project_path <- base::paste0(folder_path, "/", clean_project_name, "/")
   # initialize project

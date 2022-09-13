@@ -2,7 +2,7 @@
 % Please edit documentation in R/goodenuff_project.R
 \name{goodenuff_project}
 \alias{goodenuff_project}
-\title{goodenuff_project}
+\title{Create a new goodenuffR project}
 \usage{
 goodenuff_project(project_name, folder_path)
 }

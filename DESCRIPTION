@@ -1,7 +1,7 @@
 Package: goodenuffR
 Type: Package
 Title: Create a project folder 
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: 
     person(given = "Martin",
            family = "Frigaard",

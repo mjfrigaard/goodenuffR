@@ -1,9 +1,9 @@
 pandoc: 2.7.3
-pkgdown: 2.0.1
+pkgdown: 2.0.6
 pkgdown_sha: ~
 articles:
   getting-started: getting-started.html
-last_built: 2022-01-13T08:43Z
+last_built: 2022-09-13T04:18Z
 urls:
   reference: https://mjfrigaard.github.io/goodenuffR/reference
   article: https://mjfrigaard.github.io/goodenuffR/articles

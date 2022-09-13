@@ -37,6 +37,9 @@
     <loc>https://mjfrigaard.github.io/goodenuffR/reference/goodenuff_files.html</loc>
   </url>
   <url>
+    <loc>https://mjfrigaard.github.io/goodenuffR/reference/goodenuff_header.html</loc>
+  </url>
+  <url>
     <loc>https://mjfrigaard.github.io/goodenuffR/reference/goodenuff_project.html</loc>
   </url>
   <url>
@@ -44,8 +47,5 @@
   </url>
   <url>
     <loc>https://mjfrigaard.github.io/goodenuffR/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://mjfrigaard.github.io/goodenuffR/reference/topr.html</loc>
   </url>
 </urlset>

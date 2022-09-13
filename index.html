@@ -8,8 +8,8 @@
 <meta name="description" content="This package creates folders and files following the advice in the excellent paper, https: //swcarpentry.github.io/good-enough-practices-in-scientific-computing/.">
 <title>Create a project folder  • goodenuffR</title>
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet">
-<script src="deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link href="deps/bootstrap-5.1.3/bootstrap.min.css" rel="stylesheet">
+<script src="deps/bootstrap-5.1.3/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Create a project folder ">
 <meta property="og:description" content="This package creates folders and files following the advice in the excellent paper, https: //swcarpentry.github.io/good-enough-practices-in-scientific-computing/.">
@@ -33,7 +33,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div id="navbar" class="collapse navbar-collapse ms-2">
+    <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="nav-item">
   <a class="nav-link" href="reference/index.html">Reference</a>
@@ -62,7 +62,6 @@
 <p><img src="reference/figures/goodenuffR.png" width="50%" height="50%" style="display: block; margin: auto auto auto 0;"></p>
 <p>This <code>goodenuffR</code> package is based on the <strong>excellent</strong> advice in the paper, <a href="https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/" class="external-link">“Good Enough Practices for Scientific Computing”</a> by Wilson et al. </p>
 <!-- badges: start -->
-
 <p>The goal of <code>goodenuffR</code> is to create the files and folders outlined in the paper above (and like the folder tree below)</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a>|-- CITATION</span>
 <span id="cb1-2"><a href="#cb1-2"></a>|-- README</span>
@@ -84,20 +83,20 @@
 </h2>
 <p>You can install the Github version below:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span>
-<span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"mjfrigaard/goodenuffR"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"mjfrigaard/goodenuffR"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="quick-start">Quick Start<a class="anchor" aria-label="anchor" href="#quick-start"></a>
 </h2>
 <p>Run this:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://mjfrigaard.github.io/goodenuffR/">goodenuffR</a></span><span class="op">)</span>
-<span class="fu">goodenuffR</span><span class="fu">::</span><span class="fu"><a href="reference/goodenuff_project.html">goodenuff_project</a></span><span class="op">(</span>project_name <span class="op">=</span> <span class="st">"my project"</span>, folder_path <span class="op">=</span> <span class="st">"~/projects"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://mjfrigaard.github.io/goodenuffR/">goodenuffR</a></span><span class="op">)</span></span>
+<span><span class="fu">goodenuffR</span><span class="fu">::</span><span class="fu"><a href="reference/goodenuff_project.html">goodenuff_project</a></span><span class="op">(</span>project_name <span class="op">=</span> <span class="st">"my project"</span>, folder_path <span class="op">=</span> <span class="st">"~/projects"</span><span class="op">)</span></span></code></pre></div>
 <p>Then run this:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://mjfrigaard.github.io/goodenuffR/">goodenuffR</a></span><span class="op">)</span>
-<span class="fu"><a href="reference/goodenuff_files.html">goodenuff_files</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://mjfrigaard.github.io/goodenuffR/">goodenuffR</a></span><span class="op">)</span></span>
+<span><span class="fu"><a href="reference/goodenuff_files.html">goodenuff_files</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p>And you’ll see this:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>├── CITATION</span>
 <span id="cb5-2"><a href="#cb5-2"></a>├── LICENSE</span>
@@ -129,7 +128,7 @@
 </h2>
 <p><code><a href="reference/goodenuff_code.html">goodenuffR::goodenuff_code()</a></code> creates code files for various processes.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">goodenuffR</span><span class="fu">::</span><span class="fu"><a href="reference/goodenuff_code.html">goodenuff_code</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">goodenuffR</span><span class="fu">::</span><span class="fu"><a href="reference/goodenuff_code.html">goodenuff_code</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <div class="sourceCode" id="cb7"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="co"># └── code</span></span>
 <span id="cb7-2"><a href="#cb7-2"></a><span class="co">#    ├── 01-import.R</span></span>
 <span id="cb7-3"><a href="#cb7-3"></a><span class="co">#    ├── 02-tidy.R</span></span>
@@ -140,18 +139,18 @@
 <span id="cb7-8"><a href="#cb7-8"></a><span class="co">#    └── runall.R</span></span></code></pre></div>
 <p>Each <code>code</code> file has a header:</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co">#=====================================================================#</span>
-<span class="co"># This is code to create:</span>
-<span class="co"># Authored by and feedback to:</span>
-<span class="co"># MIT License</span>
-<span class="co"># Version:</span>
-<span class="co">#=====================================================================#</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co">#=====================================================================#</span></span>
+<span><span class="co"># This is code to create:</span></span>
+<span><span class="co"># Authored by and feedback to:</span></span>
+<span><span class="co"># MIT License</span></span>
+<span><span class="co"># Version:</span></span>
+<span><span class="co">#=====================================================================#</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="good-enough-collaboration">Good Enough Collaboration<a class="anchor" aria-label="anchor" href="#good-enough-collaboration"></a>
 </h2>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">goodenuffR</span><span class="fu">::</span><span class="fu"><a href="reference/goodenuff_collab.html">goodenuff_collab</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">goodenuffR</span><span class="fu">::</span><span class="fu"><a href="reference/goodenuff_collab.html">goodenuff_collab</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <div class="sourceCode" id="cb10"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="co"># └── CITATION</span></span>
 <span id="cb10-2"><a href="#cb10-2"></a><span class="co"># └── LICENSE</span></span>
 <span id="cb10-3"><a href="#cb10-3"></a><span class="co"># └── README.Rmd</span></span>
@@ -202,7 +201,7 @@
 </h2>
 <p>Create folder for keeping raw data separate from other data files.</p>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">goodenuffR</span><span class="fu">::</span><span class="fu"><a href="reference/goodenuff_data.html">goodenuff_data</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">goodenuffR</span><span class="fu">::</span><span class="fu"><a href="reference/goodenuff_data.html">goodenuff_data</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <div class="sourceCode" id="cb14"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="co"># data</span></span>
 <span id="cb14-2"><a href="#cb14-2"></a><span class="co"># ├── README.md</span></span>
 <span id="cb14-3"><a href="#cb14-3"></a><span class="co"># └── raw</span></span></code></pre></div>
@@ -229,7 +228,7 @@
 </h2>
 <p>The <code><a href="reference/goodenuff_doc.html">goodenuffR::goodenuff_doc()</a></code> function creates three files to document your project.</p>
 <div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">goodenuffR</span><span class="fu">::</span><span class="fu"><a href="reference/goodenuff_doc.html">goodenuff_doc</a></span><span class="op">(</span><span class="op">)</span> </code></pre></div>
+<code class="sourceCode R"><span><span class="fu">goodenuffR</span><span class="fu">::</span><span class="fu"><a href="reference/goodenuff_doc.html">goodenuff_doc</a></span><span class="op">(</span><span class="op">)</span> </span></code></pre></div>
 <div class="sourceCode" id="cb17"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="co"># docs</span></span>
 <span id="cb17-2"><a href="#cb17-2"></a><span class="co"># ├── changelog.txt</span></span>
 <span id="cb17-3"><a href="#cb17-3"></a><span class="co"># ├── manuscript.Rmd</span></span>
@@ -285,7 +284,7 @@
 </h2>
 <p>The following folders are created for your project results:</p>
 <div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">goodenuffR</span><span class="fu">::</span><span class="fu"><a href="reference/goodenuff_results.html">goodenuff_results</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">goodenuffR</span><span class="fu">::</span><span class="fu"><a href="reference/goodenuff_results.html">goodenuff_results</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <div class="sourceCode" id="cb22"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a><span class="co"># results</span></span>
 <span id="cb22-2"><a href="#cb22-2"></a><span class="co"># ├── figures</span></span>
 <span id="cb22-3"><a href="#cb22-3"></a><span class="co"># ├── manuscript</span></span>
@@ -338,7 +337,7 @@
 
 <div class="pkgdown-footer-right">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
     </footer>

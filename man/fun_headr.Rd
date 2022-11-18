@@ -2,7 +2,7 @@
 % Please edit documentation in R/fun_headr.R
 \name{fun_headr}
 \alias{fun_headr}
-\title{rheadr}
+\title{Create a (fun) R Script Header}
 \usage{
 fun_headr(name)
 }
@@ -10,7 +10,7 @@ fun_headr(name)
 \item{fun_headr}{}
 }
 \description{
-The fun_headr function is similar to the hot keys
+The fun_headr() function is similar to the hot keys
 'cmd + shift + R' for creating a section header.
 }
 \examples{

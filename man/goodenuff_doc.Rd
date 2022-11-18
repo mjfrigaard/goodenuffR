@@ -2,10 +2,11 @@
 % Please edit documentation in R/goodenuff_doc.R
 \name{goodenuff_doc}
 \alias{goodenuff_doc}
-\title{goodenuff_docs}
+\title{good enuff R documentation}
 \usage{
 goodenuff_doc()
 }
 \description{
-Create doc folder with notebook.Rmd, manuscript.Rmd, and changelog.txt files.
+Create doc folder with notebook.Rmd, manuscript.Rmd, and
+    changelog.txt files.
 }

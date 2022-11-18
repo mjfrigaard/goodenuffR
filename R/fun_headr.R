@@ -1,4 +1,4 @@
-#' rheadr
+#' Create a (fun) R Script Header
 #'
 #' @param fun_headr
 #'
@@ -10,7 +10,7 @@
 #' # (with RStudio open)
 #' # fun_headr("packages")
 #'
-#' @description The fun_headr function is similar to the hot keys
+#' @description The fun_headr() function is similar to the hot keys
 #' 'cmd + shift + R' for creating a section header.
 fun_headr <- function(name) {
     section_header <- paste0("# <(+_+)> ", name, " ––+––+––+––+––+––+––+––––+––+––+––––+––+ ----")
